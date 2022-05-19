@@ -1,10 +1,16 @@
-import Logo from './assets/images/free-png.ru-740-450x200.png';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Header, Main } from './components';
+import { Footer } from './components/footer';
+import { getPokemon } from './redux/operations/pokemonOperations';
+import { pokemonsInfo } from './redux/selectors/pokemonSelector';
 
 const App = () => {
   return (
-    <div className="App" style={{ background: '#ce3ce3' }}>
-      hello
-      <img src={Logo} alt="logo" />
+    <div className="app">
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 };
