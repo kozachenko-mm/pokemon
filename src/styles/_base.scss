@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Inter', serif;
+}
+
+img {
+	display: block;
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+	max-height: 100%;
+	width: 100%;
+	max-width: 100%;
+}
+
+.button {
+	position: relative;
+	color: #fff;
+	border-radius: 8px;
+	padding: 8px;
+	cursor: pointer;
+	text-transform: uppercase;
+	width: 200px;
+	border: none;
+	overflow: hidden;
+	background-color: transparent;
+	&:disabled {
+		background-color: #ccc;
+		cursor: not-allowed;
+		&:hover {
+			background-color: #ccc;
+		}
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: $main-color;
+		border-radius: 8px;
+		z-index: -1;
+	}
+}

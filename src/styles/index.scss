@@ -1,9 +1,16 @@
-@import './variables.scss';
-@import './base.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
+@import 'variables';
+@import 'base';
 @import './components/header.scss';
 @import './components/main.scss';
 @import './components/footer.scss';
-
 @import './components/pokemonList.scss';
 @import './components/pokemonItem.scss';
 @import './components/pokemonDetails.scss';
+@import './components/pagination.scss';
+@import './components/pokemonTypes.scss';
+@import './components//buttons.scss';
+@import './components/search.scss';
+@import './components/loader.scss';

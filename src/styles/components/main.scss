@@ -1,10 +1,42 @@
 .main {
-  flex: 1 0 auto;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 8px;
-  .flex {
-    display: flex;
-    gap: 16px;
-  }
+	flex: 1 0 auto;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 24px 8px;
+	> .dashboard {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		margin-bottom: 16px;
+		// gap: 16px;
+		.select {
+			display: flex;
+			gap: 8px;
+			align-items: center;
+		}
+	}
+	> .content {
+		display: flex;
+		align-items: start;
+		gap: 16px;
+	}
+	.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+		padding: 6px 12px;
+		min-width: 180px;
+		border: 1px solid $secondary-color;
+		border-radius: 8px;
+		&:focus {
+			border-radius: 8px;
+		}
+	}
+	.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+		border-radius: 8px;
+	}
+}
+.error {
+	text-align: center;
+	font-family: 'Pokemon Solid', sans-serif;
+	font-size: 42px;
+	letter-spacing: 6px;
+	flex: 1;
 }

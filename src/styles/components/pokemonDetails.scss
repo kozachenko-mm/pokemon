@@ -1,3 +1,82 @@
-.card {
-  flex: 1;
+.details {
+	flex: 1;
+	text-align: center;
+
+	.card {
+		padding: 16px;
+		border-radius: 8px;
+		box-shadow: $main-shadow;
+	}
+	.no-card {
+		font-size: 32px;
+		font-weight: 600;
+		flex: 1;
+		text-align: center;
+	}
+	.name {
+		text-transform: capitalize;
+		color: $main-color;
+		font-size: 44px;
+		font-weight: normal;
+		letter-spacing: 3px;
+		font-family: 'Pokemon Solid', sans-serif;
+		animation: 1s show ease-in-out;
+	}
+	@keyframes show {
+		0% {
+			transform: translateY(-30px);
+		}
+		40% {
+			transform: translateY(10px);
+		}
+		80% {
+			transform: translateY(-5px);
+		}
+		100% {
+			transform: translateY(0px);
+		}
+	}
+
+	.image {
+		margin: 0 auto;
+	}
+	.type-list {
+		display: flex;
+		justify-content: center;
+		gap: 8px;
+		margin-bottom: 20px;
+	}
+	&_block {
+		display: flex;
+		gap: 16px;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+	&_title {
+		width: 60px;
+		color: $main-color;
+		margin: 0;
+	}
+	&_list {
+		flex: 1;
+		text-align: left;
+
+		&--grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			font-style: italic;
+		}
+		&--flex {
+			display: flex;
+			flex-direction: column;
+			p {
+				padding: 4px;
+
+				strong {
+					color: $main-red;
+				}
+			}
+		}
+	}
 }
