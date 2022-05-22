@@ -1,2 +1,2 @@
-export { Button } from './button'
-export { PokemonLoader } from './pokemonLoader'
+export { Button } from './button';
+export { PokemonLoader } from './pokemonLoader';
