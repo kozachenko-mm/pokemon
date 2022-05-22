@@ -1,14 +1,15 @@
 .main {
  flex: 1 0 auto;
- width: 1200px;
  margin: 0 auto;
  padding: 24px 8px;
+ width: 100%;
  > .dashboard {
   display: flex;
+  gap: 16px;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  margin-bottom: 16px;
-  // gap: 16px;
+  margin-bottom: 20px;
+
   .select {
    display: flex;
    gap: 8px;
@@ -16,21 +17,45 @@
   }
  }
  > .content {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
+  display: block;
+  //   display: flex;
+  //   align-items: flex-start;
+  //   gap: 16px;
  }
- .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
-  padding: 6px 12px;
-  min-width: 180px;
-  border: 1px solid $secondary-color;
-  border-radius: 8px;
-  &:focus {
-   border-radius: 8px;
+ //  .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+ //   padding: 6px 12px;
+ //   min-width: 180px;
+ //   border: 1px solid $secondary-color;
+ //   border-radius: 8px;
+ //   &:focus {
+ //    border-radius: 8px;
+ //   }
+ //  }
+ //  .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+ //   border-radius: 8px;
+ //  }
+ @include sm {
+  max-width: 560px;
+ }
+ @include md {
+  max-width: 760px;
+ }
+ @include lg {
+  max-width: 980px;
+  .dashboard {
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly;
+   margin-bottom: 16px;
+  }
+  > .content {
+   display: flex;
+   align-items: flex-start;
+   gap: 16px;
   }
  }
- .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
-  border-radius: 8px;
+ @include xl {
+  max-width: 1200px;
  }
 }
 .error {

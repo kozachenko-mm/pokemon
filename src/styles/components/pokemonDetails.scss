@@ -1,11 +1,13 @@
 .details {
- flex: 1;
+flex: 1;
  text-align: center;
 
  .card {
   padding: 16px;
+  background-color: #fff;
   border-radius: 8px;
   box-shadow: $main-shadow;
+  
  }
  .no-card {
   font-size: 32px;

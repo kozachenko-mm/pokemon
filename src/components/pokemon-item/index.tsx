@@ -11,7 +11,7 @@ export const PokemonItem: React.FC<PokemonItemProps> = ({ name, img }) => {
   const { getPokemonDetails } = useActions();
   const { list } = useTypedSelector((state) => state.pokemonList);
 
-  const choosePokemon = () => {
+   const choosePokemon = () => {
     const pokemon = list.find((item) => item.name === name);
     getPokemonDetails(pokemon);
   };

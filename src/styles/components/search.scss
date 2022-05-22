@@ -1,13 +1,13 @@
 .searchForm {
-	display: flex;
-	gap: 8px;
-	input {
-		border-radius: 8px;
-		border: 1px solid $secondary-color;
-		&:active,
-		&:focus {
-			// border-width: 2px;
-			outline: 2px solid $main-red;
-		}
-	}
+ display: flex;
+ gap: 8px;
+ input {
+  border-radius: 8px;
+  width: 150px;
+  border: 1px solid $secondary-color;
+  &:active,
+  &:focus {
+   outline: 1px solid $main-red;
+  }
+ }
 }

@@ -27,10 +27,10 @@
 		"require-jsdoc": 0,
 		"array-bracket-spacing": ["error", "never"],
 		"arrow-spacing": 2,
-		"comma-dangle": ["error", "always-multiline"],
+		"comma-dangle": ["warn", "always-multiline"],
 		"function-call-argument-newline": ["error", "consistent"],
 		"@typescript-eslint/no-unused-vars": 2,
-		"jsx-quotes": ["error", "prefer-double"],
+		"jsx-quotes": ["off", "prefer-double"],
 		"max-len": 0,
 		"no-multi-spaces": 2,
 		"no-whitespace-before-property": 2,
@@ -53,6 +53,8 @@
         "react/require-default-props": 0,
         "react/button-has-type": 0,
         "no-shadow": 0,
-        "default-param-last": 0
+        "default-param-last": 0,
+        "indent": 0,
+        "react/jsx-indent-props": 0
     }
 }
