@@ -66,16 +66,25 @@
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			font-style: italic;
+			span{
+				font-size: 14px;
+				color: rgb(124, 203, 229);
+			}
 		}
 		&--flex {
 			display: flex;
 			flex-direction: column;
 			p {
 				padding: 4px;
-
-				strong {
-					color: $main-red;
+				color: $main-red;
+				span{
+					font-weight: 700;
+					font-family: "Pokemon solid", sans-serif;
+					letter-spacing: 2px;
+					font-size: 14px;
+					color: $secondary-color;
 				}
+				
 			}
 		}
 	}
